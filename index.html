@@ -19,10 +19,54 @@
       <div class="button-container">
         <button id="all-books-btn">Todos os Livros</button>
       </div>
+      <div class="floating-contact">
+        <button id="contact-btn">📞 Contato</button>
+        <div class="contact-popup" id="contact-popup">
+          <a href="mailto:contato@christiebooks.com">📧 Enviar E-mail</a>
+          <a href="tel:+558199887766">📞 Ligar</a>
+          <a href="sms:+558199887766">📩 SMS</a>
+        </div>
+      </div>
+      <!-- Fechando corretamente a div floating-contact -->
     </header>
     <main>
       <div id="book-list"></div>
     </main>
+    <footer>
+      <p>&copy; 2025 ChristieBooks. Todos os direitos reservados.</p>
+    </footer>
+
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(() => console.log("Service Worker registrado!"))
+          .catch((error) =>
+            console.error("Erro ao registrar Service Worker:", error)
+          );
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactBtn = document.getElementById("contact-btn");
+        const contactPopup = document.getElementById("contact-popup");
+
+        contactBtn.addEventListener("click", function () {
+          contactPopup.classList.toggle("show");
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !contactBtn.contains(event.target) &&
+            !contactPopup.contains(event.target)
+          ) {
+            contactPopup.classList.remove("show");
+          }
+        });
+      });
+    </script>
     <script src="../js/api.js"></script>
   </body>
 </html>
