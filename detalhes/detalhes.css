@@ -1,4 +1,3 @@
-/* Estilo geral das páginas de detalhes */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -17,7 +16,6 @@ header {
   color: white;
 }
 
-/* Container principal dos detalhes do livro */
 .details-container {
   display: flex;
   flex-direction: column;
@@ -70,7 +68,6 @@ header {
   background-color: #ff4500;
 }
 
-/* Ajuste para telas menores (mobile) */
 @media (max-width: 480px) {
   .details-container {
     width: 90%;
