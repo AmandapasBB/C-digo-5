@@ -2,21 +2,22 @@
   "name": "ChristieBooks",
   "short_name": "ChristieBooks",
   "description": "Catálogo de livros da Agatha Christie",
-  "start_url": "Home/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f8f8f8",
   "theme_color": "#333333",
   "icons": [
     {
-      "src": "assets/icon-192.png",
+      "src": "assets/appstore.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/icon-512.png",
+      "src": "assets/ic_launcher.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
 }
+
 
