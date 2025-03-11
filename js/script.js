@@ -48,7 +48,7 @@ function displayBooks(books) {
 
     bookCard.innerHTML = `
           <img src="${
-            bookInfo.imageLinks?.thumbnail || "images/default-cover.jpg"
+            bookInfo.imageLinks?.thumbnail || "assets/appstore.png"
           }" alt="${bookInfo.title}">
           <h3>${bookInfo.title}</h3>
           <p>${
@@ -62,3 +62,20 @@ function displayBooks(books) {
     bookList.appendChild(bookCard);
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const contactBtn = document.getElementById("contact-btn");
+  const contactPopup = document.getElementById("contact-popup");
+
+  contactBtn.addEventListener("click", function () {
+    contactPopup.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !contactBtn.contains(event.target) &&
+      !contactPopup.contains(event.target)
+    ) {
+      contactPopup.classList.remove("show");
+    }
+  });
+});
