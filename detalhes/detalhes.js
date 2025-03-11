@@ -40,6 +40,6 @@ function displayBookDetails(book) {
       <p class="description"><strong>Descrição:</strong> ${
         bookInfo.description || "Sem descrição disponível."
       }</p>
-      <button onclick="window.location.href='../Home/index.html'">Voltar</button>
+      <button onclick="window.location.href='../index.html'">Voltar</button>
   `;
 }
