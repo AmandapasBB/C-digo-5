@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>ChristieBooks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ChristieBooks</h1>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar livros..." />
+        <button id="search-btn">Buscar</button>
+      </div>
+      <div class="button-container">
+        <button id="all-books-btn">Todos os Livros</button>
+      </div>
+    </header>
+    <main>
+      <div id="book-list"></div>
+    </main>
+    <script src="../js/api.js"></script>
+  </body>
+</html>
