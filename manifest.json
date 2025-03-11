@@ -1,11 +1,11 @@
 {
-  "name": "AlertH",
-  "short_name": "AlertH",
-  "description": "Detector de Som com Alerta Tátil",
-  "start_url": "index.html",
+  "name": "ChristieBooks",
+  "short_name": "ChristieBooks",
+  "description": "Catálogo de livros da Agatha Christie",
+  "start_url": "Home/index.html",
   "display": "standalone",
-  "background_color": "#ff4f4f",
-  "theme_color": "#ff4f4f",
+  "background_color": "#f8f8f8",
+  "theme_color": "#333333",
   "icons": [
     {
       "src": "assets/icon-192.png",
@@ -19,3 +19,4 @@
     }
   ]
 }
+
