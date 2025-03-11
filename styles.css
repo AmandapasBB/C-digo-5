@@ -78,7 +78,7 @@ header {
   cursor: pointer;
   border-radius: 5px;
   width: auto;
-  min-width: 120px; /* Garante um tamanho mínimo */
+  min-width: 120px;
   text-align: center;
 }
 
